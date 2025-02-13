@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+
+# Yarn
+.yarn/*
+.pnp.*
+.yarnrc.yml
+.yarn-error.log
+
+# TypeScript build output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Env files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Editor and system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Jest
+jest/
+jest-cache/
+jest-output/
+
+# PM2
+pids/
+pm2.log
+pm2.pid
+pm2/
