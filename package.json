@@ -1,18 +1,26 @@
 {
   "name": "diary",
   "version": "1.0.0",
-  "main": "app.ts",
+  "main": "dist/app.js",
   "repository": "https://github.com/oaj6634/diary.git",
   "author": "oaj6634 <dhdjwlsdlaehk123@naver.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "dev": "nodemon --watch src -e ts,ejs --exec yarn start"
+  },
   "dependencies": {
     "@types/express": "^5.0.0",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "sequelize": "^6.37.5",
     "sequelize-cli": "^6.6.2",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@types/shelljs": "^0.8.15",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2"
   }
 }
